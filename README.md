@@ -1,20 +1,29 @@
 # Datathon Passos Mágicos — Predição de Risco Educacional
 
+Projeto desenvolvido para o **Datathon da Pós-Tech**, utilizando dados
+da **Associação Passos Mágicos**.
 
-Projeto desenvolvido para o **Datathon da Pós-Tech**, utilizando dados da **Associação Passos Mágicos**.
+O objetivo do trabalho é explorar os indicadores educacionais dos
+alunos, analisar sua evolução ao longo do tempo e desenvolver um modelo
+de Machine Learning capaz de estimar a probabilidade de um aluno entrar
+em situação de defasagem no ciclo seguinte.
 
-O objetivo do trabalho é explorar os indicadores educacionais dos alunos, analisar sua evolução ao longo do tempo e desenvolver um modelo de Machine Learning capaz de estimar a probabilidade de um aluno entrar em situação de defasagem no ciclo seguinte.
+## 🚀 Acesse o projeto
 
----
-## Aplicação 
-
-🔗 [Acessar aplicação no Streamlit](https://datathon-paapps-magicos-mvvnztn5iqbrwst443szx9.streamlit.app/)
+- 📊 **Dashboard Power BI:** [Acessar
+  dashboard](https://app.powerbi.com/view?r=eyJrIjoiNmIxMjhkZDgtNjBmYi00ZjJkLWJiYWYtNjliMTQ0N2MyZWQ2IiwidCI6Ijg1NzM3Y2U3LTZlM2ItNGVkNC05NzUzLWU2NDI1ZDk0ZTVkZiJ9)
+- 🤖 **Aplicação Streamlit:** [Predição de Risco
+  Educacional](https://datathon-paapps-magicos-mvvnztn5iqbrwst443szx9.streamlit.app/)
+- 🎥 **Apresentação em vídeo:** [Assistir no
+  YouTube](https://www.youtube.com/watch?v=2Ak7RlqrFUg&feature=youtu.be)
 
 ## Contexto
 
-A Associação Passos Mágicos atua na transformação da vida de crianças e jovens por meio da educação.
+A Associação Passos Mágicos atua na transformação da vida de crianças e
+jovens por meio da educação.
 
-O Datathon propõe uma análise dos indicadores educacionais e psicossociais dos alunos, com foco em:
+O Datathon propõe uma análise dos indicadores educacionais e
+psicossociais dos alunos, com foco em:
 
 - adequação ao nível;
 - desempenho acadêmico;
@@ -27,38 +36,41 @@ O Datathon propõe uma análise dos indicadores educacionais e psicossociais dos
 - risco de defasagem;
 - efetividade do programa.
 
-Além da análise exploratória, o projeto inclui um **modelo preditivo de risco** e uma aplicação em **Streamlit**.
+Além da análise exploratória, o projeto inclui um **modelo preditivo de
+risco** e uma aplicação em **Streamlit**.
 
----
+------------------------------------------------------------------------
 
 ## Objetivos do projeto
 
 O projeto foi estruturado para responder três perguntas principais:
 
-1. **Como os indicadores educacionais evoluíram entre 2022 e 2024?**
-2. **Quais indicadores estão mais associados ao desenvolvimento educacional e à defasagem?**
-3. **É possível identificar antecipadamente alunos com maior risco de entrar em defasagem?**
+1.  **Como os indicadores educacionais evoluíram entre 2022 e 2024?**
+2.  **Quais indicadores estão mais associados ao desenvolvimento
+    educacional e à defasagem?**
+3.  **É possível identificar antecipadamente alunos com maior risco de
+    entrar em defasagem?**
 
----
+------------------------------------------------------------------------
 
 ## Indicadores analisados
 
-| Indicador | Descrição |
-|---|---|
-| **INDE** | Índice de Desenvolvimento Educacional |
-| **IAN** | Indicador de Adequação ao Nível |
-| **IDA** | Indicador de Aprendizagem |
-| **IEG** | Indicador de Engajamento |
-| **IAA** | Indicador de Autoavaliação |
-| **IPS** | Indicador Psicossocial |
-| **IPP** | Indicador Psicopedagógico |
-| **IPV** | Indicador de Ponto de Virada |
+| Indicador | Descrição                             |
+|-----------|---------------------------------------|
+| **INDE**  | Índice de Desenvolvimento Educacional |
+| **IAN**   | Indicador de Adequação ao Nível       |
+| **IDA**   | Indicador de Aprendizagem             |
+| **IEG**   | Indicador de Engajamento              |
+| **IAA**   | Indicador de Autoavaliação            |
+| **IPS**   | Indicador Psicossocial                |
+| **IPP**   | Indicador Psicopedagógico             |
+| **IPV**   | Indicador de Ponto de Virada          |
 
----
+------------------------------------------------------------------------
 
 ## Estrutura do projeto
 
-```text
+``` text
 DATATHON 5/
 │
 ├── dashboard/
@@ -103,11 +115,11 @@ DATATHON 5/
 └── README.md
 ```
 
----
+------------------------------------------------------------------------
 
 ## Pipeline do projeto
 
-```text
+``` text
 Base original
      ↓
 Exploração dos dados
@@ -127,7 +139,7 @@ Streamlit
 Dashboard / Storytelling
 ```
 
----
+------------------------------------------------------------------------
 
 # Etapas desenvolvidas
 
@@ -135,7 +147,7 @@ Dashboard / Storytelling
 
 Notebook:
 
-```text
+``` text
 notebooks/01_exploracao.ipynb
 ```
 
@@ -151,13 +163,13 @@ Nesta etapa foram realizadas:
 - análise inicial da variável de defasagem;
 - análise de correlações.
 
----
+------------------------------------------------------------------------
 
 ## 2. Tratamento e padronização
 
 Notebook:
 
-```text
+``` text
 notebooks/02_tratamento.ipynb
 ```
 
@@ -173,54 +185,60 @@ Principais tratamentos:
 
 Arquivos gerados:
 
-```text
+``` text
 data/processed/base_tratada.csv
 data/processed/base_modelo_temporal.csv
 data/processed/relatorio_qualidade.csv
 ```
 
----
+------------------------------------------------------------------------
 
 ## 3. Análise exploratória
 
 Notebook:
 
-```text
+``` text
 notebooks/03_analise_exploratoria.ipynb
 ```
 
-A análise foi estruturada para responder às principais perguntas do Datathon.
+A análise foi estruturada para responder às principais perguntas do
+Datathon.
 
 Entre os resultados observados:
 
-- redução da proporção de alunos em defasagem ao longo do período analisado;
+- redução da proporção de alunos em defasagem ao longo do período
+  analisado;
 - evolução positiva do INDE médio;
 - redução dos casos mais severos de inadequação ao nível;
-- relações relevantes entre engajamento, aprendizagem, ponto de virada e desenvolvimento geral;
-- identificação de alunos que saíram da defasagem e alunos que entraram em defasagem entre 2023 e 2024.
+- relações relevantes entre engajamento, aprendizagem, ponto de virada e
+  desenvolvimento geral;
+- identificação de alunos que saíram da defasagem e alunos que entraram
+  em defasagem entre 2023 e 2024.
 
 ### Alguns resultados
 
-| Indicador | 2022 | 2023 | 2024 |
-|---|---:|---:|---:|
+| Indicador           |  2022 |  2023 |  2024 |
+|---------------------|------:|------:|------:|
 | Alunos em defasagem | 69,9% | 54,4% | 46,2% |
-| INDE médio | 7,04 | 7,34 | 7,40 |
-| Casos com IAN = 2,5 | 28 | 14 | 3 |
+| INDE médio          |  7,04 |  7,34 |  7,40 |
+| Casos com IAN = 2,5 |    28 |    14 |     3 |
 
 Entre os alunos acompanhados entre 2023 e 2024:
 
-- **43,3%** dos alunos que estavam em defasagem em 2023 saíram dessa condição em 2024;
-- **22,7%** dos alunos que estavam adequados em 2023 entraram em defasagem em 2024.
+- **43,3%** dos alunos que estavam em defasagem em 2023 saíram dessa
+  condição em 2024;
+- **22,7%** dos alunos que estavam adequados em 2023 entraram em
+  defasagem em 2024.
 
 Esse segundo grupo foi utilizado como base do problema preditivo.
 
----
+------------------------------------------------------------------------
 
 # Modelo de Machine Learning
 
 Notebook:
 
-```text
+``` text
 notebooks/04_modelo_ml.ipynb
 ```
 
@@ -228,11 +246,13 @@ notebooks/04_modelo_ml.ipynb
 
 O objetivo do modelo é estimar:
 
-> A probabilidade de um aluno que estava sem defasagem em 2023 entrar em situação de defasagem em 2024.
+> A probabilidade de um aluno que estava sem defasagem em 2023 entrar em
+> situação de defasagem em 2024.
 
-A abordagem temporal foi escolhida para evitar **data leakage** e aproximar o modelo de uma situação real de prevenção.
+A abordagem temporal foi escolhida para evitar **data leakage** e
+aproximar o modelo de uma situação real de prevenção.
 
----
+------------------------------------------------------------------------
 
 ## População utilizada
 
@@ -243,7 +263,7 @@ Foram considerados:
 - **84 alunos entraram em defasagem**
 - taxa positiva: aproximadamente **22,7%**
 
----
+------------------------------------------------------------------------
 
 ## Modelos avaliados
 
@@ -255,35 +275,36 @@ Foram comparados:
 
 A comparação foi realizada com validação cruzada estratificada.
 
----
+------------------------------------------------------------------------
 
 ## Modelo selecionado
 
 O modelo final selecionado foi:
 
-```text
+``` text
 Random Forest
 ```
 
-Como o objetivo é identificar o máximo possível de alunos em risco, a seleção deu maior importância ao **Recall** e ao **F2 Score**.
+Como o objetivo é identificar o máximo possível de alunos em risco, a
+seleção deu maior importância ao **Recall** e ao **F2 Score**.
 
----
+------------------------------------------------------------------------
 
 ## Resultados do modelo
 
 Resultados no conjunto de teste:
 
-| Métrica | Resultado |
-|---|---:|
-| Recall | **90,5%** |
+| Métrica   | Resultado |
+|-----------|----------:|
+| Recall    | **90,5%** |
 | Precision | **65,5%** |
-| F2 Score | **84,1%** |
-| ROC-AUC | **95,3%** |
-| PR-AUC | **85,8%** |
+| F2 Score  | **84,1%** |
+| ROC-AUC   | **95,3%** |
+| PR-AUC    | **85,8%** |
 
 O limiar padrão de 50% foi ajustado para aproximadamente:
 
-```text
+``` text
 41%
 ```
 
@@ -296,13 +317,15 @@ No conjunto de teste:
 - 2 casos não foram identificados;
 - foram gerados 10 falsos positivos.
 
-O modelo foi pensado como uma ferramenta de **triagem preventiva**, e não como um sistema de decisão automática.
+O modelo foi pensado como uma ferramenta de **triagem preventiva**, e
+não como um sistema de decisão automática.
 
----
+------------------------------------------------------------------------
 
 ## Principais variáveis preditivas
 
-A análise de `Permutation Importance` indicou relevância preditiva em variáveis como:
+A análise de `Permutation Importance` indicou relevância preditiva em
+variáveis como:
 
 - idade;
 - fase;
@@ -313,7 +336,7 @@ A análise de `Permutation Importance` indicou relevância preditiva em variáve
 
 > Importância preditiva não significa relação causal.
 
----
+------------------------------------------------------------------------
 
 # Aplicação Streamlit
 
@@ -327,23 +350,23 @@ A aplicação permite inserir os dados de um aluno e obter:
 
 Arquivo principal:
 
-```text
+``` text
 streamlit/app.py
 ```
 
----
+------------------------------------------------------------------------
 
 ## Executando o projeto localmente
 
 ### 1. Clone o repositório
 
-```bash
-git clone URL_DO_REPOSITORIO
+``` bash
+git clone https://github.com/ezequielpedro/datathon-passos-magicos.git
 ```
 
 ### 2. Entre na pasta
 
-```bash
+``` bash
 cd datathon-passos-magicos
 ```
 
@@ -351,86 +374,74 @@ cd datathon-passos-magicos
 
 Windows:
 
-```bash
+``` bash
 python -m venv .venv
 .venv\Scripts\activate
 ```
 
 Linux / macOS:
 
-```bash
+``` bash
 python -m venv .venv
 source .venv/bin/activate
 ```
 
 ### 4. Instale as dependências
 
-```bash
+``` bash
 pip install -r requirements.txt
 ```
 
 ### 5. Execute o Streamlit
 
-```bash
+``` bash
 python -m streamlit run streamlit/app.py
 ```
 
 O aplicativo ficará disponível normalmente em:
 
-```text
+``` text
 http://localhost:8501
 ```
 
----
-# Deploy
-
-A aplicação está publicada no **Streamlit Community Cloud**.
-
-### Acesse a aplicação
-
-👉 [Passos Mágicos — Predição de Risco Educacional](https://datathon-paapps-magicos-mvvnztn5iqbrwst443szx9.streamlit.app/)
-
-O aplicativo permite informar os indicadores de um aluno e obter uma estimativa da probabilidade de entrada em situação de defasagem no próximo ciclo.
-
-Arquivo principal:
-
-```text
-streamlit/app.py
-
-# Arquivos do modelo
-
-O modelo treinado é armazenado em:
-
-```text
-models/modelo_risco.joblib
-```
-
-As informações auxiliares estão em:
-
-```text
-models/modelo_risco_metadata.json
-```
-
----
+|                                                                                                                                                        |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| \# Deploy                                                                                                                                              |
+| A aplicação está publicada no **Streamlit Community Cloud**.                                                                                           |
+| \### Acesse a aplicação                                                                                                                                |
+| 👉 [Passos Mágicos — Predição de Risco Educacional](https://datathon-paapps-magicos-mvvnztn5iqbrwst443szx9.streamlit.app/)                             |
+| O aplicativo permite informar os indicadores de um aluno e obter uma estimativa da probabilidade de entrada em situação de defasagem no próximo ciclo. |
+| Arquivo principal:                                                                                                                                     |
+| `text streamlit/app.py`                                                                                                                                |
+| \# Arquivos do modelo                                                                                                                                  |
+| O modelo treinado é armazenado em:                                                                                                                     |
+| `text models/modelo_risco.joblib`                                                                                                                      |
+| As informações auxiliares estão em:                                                                                                                    |
+| `text models/modelo_risco_metadata.json`                                                                                                               |
 
 # Limitações
 
 Algumas limitações importantes devem ser consideradas:
 
-- a amostra temporal disponível para o problema preditivo é relativamente pequena;
-- existe apenas uma transição temporal completa utilizada para o modelo: 2023 → 2024;
+- a amostra temporal disponível para o problema preditivo é
+  relativamente pequena;
+- existe apenas uma transição temporal completa utilizada para o modelo:
+  2023 → 2024;
 - a avaliação foi realizada sobre dados históricos internos;
 - alguns indicadores possuíam valores ausentes;
 - as probabilidades representam estimativas estatísticas;
-- o modelo não deve substituir a avaliação pedagógica, psicológica ou psicopedagógica.
+- o modelo não deve substituir a avaliação pedagógica, psicológica ou
+  psicopedagógica.
 
----
+------------------------------------------------------------------------
 
 # Uso responsável
 
-A aplicação foi desenvolvida como uma ferramenta de **apoio à identificação preventiva de risco educacional**.
+A aplicação foi desenvolvida como uma ferramenta de **apoio à
+identificação preventiva de risco educacional**.
 
-O resultado do modelo deve ser utilizado em conjunto com a análise das equipes responsáveis pelo acompanhamento dos alunos.
+O resultado do modelo deve ser utilizado em conjunto com a análise das
+equipes responsáveis pelo acompanhamento dos alunos.
 
 A previsão não deve ser utilizada como decisão automática sobre:
 
@@ -439,22 +450,6 @@ A previsão não deve ser utilizada como decisão automática sobre:
 - acompanhamento psicológico;
 - avaliação acadêmica;
 - qualquer decisão que possa afetar diretamente a trajetória do aluno.
-
----
-
-# Próximas etapas
-
-- [x] Exploração dos dados
-- [x] Tratamento e padronização
-- [x] Análise exploratória
-- [x] Machine Learning
-- [x] Aplicação Streamlit
-- [ ] Deploy no Streamlit Community Cloud
-- [ ] Dashboard Power BI
-- [ ] Apresentação gerencial
-- [ ] Vídeo final do Datathon
-
----
 
 ## Autores
 
