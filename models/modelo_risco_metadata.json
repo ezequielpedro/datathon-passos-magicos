@@ -1,0 +1,41 @@
+{
+  "modelo": "Random Forest",
+  "target": "entrou_em_defasagem_2024",
+  "threshold": 0.4099999999999998,
+  "n_amostras": 370,
+  "taxa_classe_positiva": 0.22702702702702704,
+  "random_state": 42,
+  "features": [
+    "fase_ordem_2023",
+    "idade_2023",
+    "genero_2023",
+    "ano_ingresso_2023",
+    "instituicao_ensino_2023",
+    "inde_2023",
+    "ian_2023",
+    "ida_2023",
+    "ieg_2023",
+    "iaa_2023",
+    "ips_2023",
+    "ipp_2023",
+    "ipv_2023",
+    "nota_matematica_2023",
+    "nota_portugues_2023",
+    "nota_ingles_2023",
+    "defasagem_2023",
+    "tempo_pm_2023",
+    "media_notas_2023",
+    "media_indicadores_2023",
+    "min_indicador_2023"
+  ],
+  "metricas_teste": {
+    "accuracy": 0.8709677419354839,
+    "precision": 0.6551724137931034,
+    "recall": 0.9047619047619048,
+    "f1": 0.76,
+    "f2": 0.8407079646017699,
+    "roc_auc": 0.9530423280423279,
+    "pr_auc": 0.8577259466816566,
+    "brier_score": 0.07767264993474055
+  }
+}
