@@ -1,10 +1,14 @@
 # Datathon Passos Mágicos — Predição de Risco Educacional
 
+
 Projeto desenvolvido para o **Datathon da Pós-Tech**, utilizando dados da **Associação Passos Mágicos**.
 
 O objetivo do trabalho é explorar os indicadores educacionais dos alunos, analisar sua evolução ao longo do tempo e desenvolver um modelo de Machine Learning capaz de estimar a probabilidade de um aluno entrar em situação de defasagem no ciclo seguinte.
 
 ---
+## Aplicação 
+
+🔗 [Acessar aplicação no Streamlit](https://datathon-paapps-magicos-mvvnztn5iqbrwst443szx9.streamlit.app/)
 
 ## Contexto
 
@@ -378,47 +382,20 @@ http://localhost:8501
 ```
 
 ---
-
 # Deploy
 
-O projeto foi preparado para publicação no **Streamlit Community Cloud**.
+A aplicação está publicada no **Streamlit Community Cloud**.
+
+### Acesse a aplicação
+
+👉 [Passos Mágicos — Predição de Risco Educacional](https://datathon-paapps-magicos-mvvnztn5iqbrwst443szx9.streamlit.app/)
+
+O aplicativo permite informar os indicadores de um aluno e obter uma estimativa da probabilidade de entrada em situação de defasagem no próximo ciclo.
 
 Arquivo principal:
 
 ```text
 streamlit/app.py
-```
-
-Branch:
-
-```text
-main
-```
-
-Após o deploy, adicionar o link abaixo:
-
-```text
-https://SEU-APP.streamlit.app
-```
-
----
-
-# Tecnologias utilizadas
-
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Scikit-learn
-- Joblib
-- Altair
-- Streamlit
-- Jupyter Notebook
-- Power BI
-- Git
-- GitHub
-
----
 
 # Arquivos do modelo
 
@@ -483,4 +460,4 @@ A previsão não deve ser utilizada como decisão automática sobre:
 
 Projeto desenvolvido como parte do **Datathon da Pós-Tech**.
 
-> Adicione aqui os nomes dos integrantes do grupo antes da entrega final.
+Pedro Ezequiel Ferreira Lima
